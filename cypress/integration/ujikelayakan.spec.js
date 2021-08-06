@@ -1,3 +1,4 @@
+
 describe('Login Pada SIAKAD', () => {
     it('Membuka halaman', () => {
       cy.visit('http://siakad.polinema.ac.id') // change URL to match your dev URL
@@ -10,7 +11,6 @@ describe('Login Pada SIAKAD', () => {
         cy.get('#password').type('inipassword')
         cy.get('#form_login > div.form-actions > button').click()
         cy.contains('Username / Password Salah')
-        
       })
 
 
@@ -67,9 +67,6 @@ describe('Login Pada SIAKAD', () => {
     //     cy.contains('Lupa Password?')
  
     //   })
-
-
-
 
 
 
